@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="snakeGame">
+<head>
+    <title>Snake Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="snakeController.js"></script>
+    <script src="snakeService.js"></script>
+</head>
+<body ng-controller="snakeController">
+    <div class="game-container">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <br><div class="score">Score: {{score}}</div><br>
+        <button ng-click="startGame()">Start Game</button><br>
+        <button ng-click="resetGame()">Reset Game</button><br>
+    </div>
+</body>
+</html>
